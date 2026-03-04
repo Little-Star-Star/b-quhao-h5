@@ -1,0 +1,38 @@
+/*
+ * Box Shadow 投影规范
+ * 基于设计稿 Shadow Token，用于页面与组件统一投影层级
+ * 使用方式：var(--td-shadow-1) 或 .shadow-1 工具类
+ */
+
+ page {
+    /* ========== 1. 基础投影 @td-shadow-1 ========== */
+    /* 组件 hover 状态使用，例如表格和树拖动 */
+    --td-shadow-1: 0 1px 10px rgba(0, 0, 0, 5%), 0 4px 5px rgba(0, 0, 0, 8%), 0 2px 4px -1px rgba(0, 0, 0, 12%);
+  
+    /* ========== 2. 中层投影 @td-shadow-2 ========== */
+    /* 下拉组件使用，例如下拉菜单 / 气泡确认框 / 选择器等 */
+    --td-shadow-2: 0 3px 14px 2px rgba(0, 0, 0, 5%), 0 8px 10px 1px rgba(0, 0, 0, 6%), 0 5px 5px -3px rgba(0, 0, 0, 10%);
+  
+    /* ========== 3. 上层投影 @td-shadow-3 ========== */
+    /* 警示或弹窗组件使用，例如全局提示 / 消息通知等 */
+    --td-shadow-3: 0 6px 30px 5px rgba(0, 0, 0, 5%), 0 16px 24px 2px rgba(0, 0, 0, 4%), 0 8px 10px -5px rgba(0, 0, 0, 8%);
+  }
+  
+  /* ========== 投影工具类 ========== */
+  /* 可直接套用于组件的 class */
+  
+  /* 基础投影 - 组件 hover、表格/树拖动等 */
+  .shadow-1 {
+    box-shadow: var(--td-shadow-1);
+  }
+  
+  /* 中层投影 - 下拉菜单、气泡确认框、选择器等 */
+  .shadow-2 {
+    box-shadow: var(--td-shadow-2);
+  }
+  
+  /* 上层投影 - 全局提示、消息通知、弹窗等 */
+  .shadow-3 {
+    box-shadow: var(--td-shadow-3);
+  }
+  

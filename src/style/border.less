@@ -1,0 +1,88 @@
+/*
+ * Border 边框工具类
+ * 用于统一设置边框样式
+ * 使用方式：class="border" 或 class="border-none border-top"
+ */
+
+/* ========== 1. 无边框 ========== */
+.border-none {
+  border: none;
+}
+
+.border-0 {
+  border: 0;
+}
+
+/* ========== 2. 全部方向边框 ========== */
+.border {
+  border: 1px solid var(--component-border);
+}
+
+/* ========== 3. 单方向边框 ========== */
+.border-top {
+  border-top: 1px solid var(--component-border);
+}
+
+.border-right {
+  border-right: 1px solid var(--component-border);
+}
+
+.border-bottom {
+  border-bottom: 1px solid var(--component-border);
+}
+
+.border-left {
+  border-left: 1px solid var(--component-border);
+}
+
+/* ========== 4. 分隔线边框（使用 component-stroke） ========== */
+.border-stroke {
+  border: 1px solid var(--component-stroke);
+}
+
+.border-stroke-top {
+  border-top: 1px solid var(--component-stroke);
+}
+
+.border-stroke-right {
+  border-right: 1px solid var(--component-stroke);
+}
+
+.border-stroke-bottom {
+  border-bottom: 1px solid var(--component-stroke);
+}
+
+.border-stroke-left {
+  border-left: 1px solid var(--component-stroke);
+}
+
+/* ========== 5. 品牌色边框 Brand Color Border ========== */
+.border-brand {
+  border: 1px solid var(--brand-color);
+}
+
+.border-brand-top {
+  border-top: 1px solid var(--brand-color);
+}
+
+.border-brand-right {
+  border-right: 1px solid var(--brand-color);
+}
+
+.border-brand-bottom {
+  border-bottom: 1px solid var(--brand-color);
+}
+
+.border-brand-left {
+  border-left: 1px solid var(--brand-color);
+}
+
+/* 品牌色 active 态边框 */
+.border-brand-active {
+  border: 1px solid var(--brand-color-active);
+}
+
+.border-brand-active-bottom {
+  border-bottom: 1px solid var(--brand-color-active);
+}
+

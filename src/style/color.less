@@ -1,0 +1,339 @@
+/*
+ * Color Tokens - Light Mode 色彩规范
+ * 基于设计稿 Token，用于页面与组件统一取色
+ * 使用方式：var(--bg-color-page) 等
+ */
+
+page {
+  /* ========== 1. 中性色彩 Neutral Colors ========== */
+
+  /* 默认页面底层背景 Gray1 */
+  --bg-color-page: #f3f3f3;
+
+  /* 上层容器背景 White1 */
+  --bg-color-container: #ffffff;
+
+  /* 次要容器背景 Gray1 */
+  --bg-color-secondarycontainer: #f3f3f3;
+
+  /* 组件背景 / 主要容器之上组件背景 Gray3 */
+  --bg-color-component: #e7e7e7;
+
+  /* 默认组件分隔线 Gray3 */
+  --component-stroke: #e7e7e7;
+
+  /* 默认边框 Gray4 */
+  --component-border: #dcdcdc;
+
+  /* 遮罩/叠加（如关闭按钮背景） */
+  --overlay-light: rgba(0, 0, 0, 0.1);
+
+  /* ========== 2. 中性色彩交互 Token Neutral Color Interaction Tokens ========== */
+
+  /* 主要容器背景 click / 次要级页面背景 click Gray3 */
+  --bg-color-container-active: #e7e7e7;
+
+  /* 次要容器背景 click Gray4 */
+  --bg-color-secondarycontainer-active: #dcdcdc;
+
+  /* 组件背景 active / 上层容器之上组件背景 active Gray6 */
+  --bg-color-component-active: #a6a6a6;
+
+  /* 组件背景 disabled / 上层容器之上组件背景 disabled Gray2 */
+  --bg-color-component-disabled: #eeeeee;
+
+  /* ========== 3. 文字&图标色彩 Text & Icon Colors ========== */
+
+  /* 主要文字色彩 Font Gray1 */
+  --text-color-primary: rgba(0, 0, 0, 0.9);
+
+  /* 次要文字色彩 Font Gray2 */
+  --text-color-secondary: rgba(0, 0, 0, 0.6);
+
+  /* 占位符文字色彩 Font Gray3 */
+  --text-color-placeholder: rgba(0, 0, 0, 0.4);
+
+  /* 文字 disabled 态 Font Gray4 */
+  --text-color-disabled: rgba(0, 0, 0, 0.26);
+
+  /* 文字反色色彩 Font White1 */
+  --text-color-anti: #ffffff;
+
+  /* 主题色文字色彩 Brand7 */
+  --text-color-brand: #0052d9;
+
+  /* 链接文字 Brand7 */
+  --text-color-link: #0052d9;
+
+  /* ========== 4. 主题色&功能色 Theme & Functional Colors ========== */
+
+  /* --- 品牌色 Brand --- */
+  /* 品牌色 Brand7 */
+  --brand-color: #0052d9;
+
+  /* 品牌色 active Brand8 */
+  --brand-color-active: #003cab;
+
+  /* 品牌色 disabled Brand3 */
+  --brand-color-disabled: #b5c7ff;
+
+  /* 品牌色 focus Brand1 */
+  --brand-color-focus: #f2f3ff;
+
+  /* 品牌色 light Brand1 */
+  --brand-color-light: #f2f3ff;
+
+  /* 品牌色 light 交互状态 active 使用 Brand2 */
+  --brand-color-light-active: #d9e1ff;
+
+  /* --- 错误色 Error --- */
+  /* 错误色 Error6 */
+  --error-color: #d54941;
+
+  /* 错误色 active Error7 */
+  --error-color-active: #ad352f;
+
+  /* 错误色 disabled Error3 */
+  --error-color-disabled: #ffb9b0;
+
+  /* 错误色 focus Error2 */
+  --error-color-focus: #ffd8d2;
+
+  /* 错误色 light 交互状态使用 Error1 */
+  --error-color-light: #fff0ed;
+
+  /* --- 警示色 Warning --- */
+  /* 警示色 Warning5 */
+  --warning-color: #e37318;
+
+  /* 警示色 active Warning6 */
+  --warning-color-active: #be5a00;
+
+  /* 警示色 disabled Warning3 */
+  --warning-color-disabled: #ffb98c;
+
+  /* 警示色 focus Warning2 */
+  --warning-color-focus: #ffd9c2;
+
+  /* 警示色 light 交互状态使用 Warning1 */
+  --warning-color-light: #fff1e9;
+
+  /* --- 成功色 Success --- */
+  /* 成功色 Success5 */
+  --success-color: #2ba471;
+
+  /* 成功色 active Success8 */
+  --success-color-active: #008858;
+
+  /* 成功色 disabled Success3 */
+  --success-color-disabled: #92dab2;
+
+  /* 成功色 focus Success2 */
+  --success-color-focus: #c6f3d7;
+
+  /* 成功色 light 交互状态使用 Success1 */
+  --success-color-light: #e3f9e9;
+}
+
+/* ========== 颜色工具类 ========== */
+/* 可直接套用于组件的 class，使用方式：class="bg-container text-primary" */
+
+/* ========== 1. 背景色 Background Colors ========== */
+
+/* 页面背景 */
+.bg-page {
+  background-color: var(--bg-color-page);
+}
+
+/* 容器背景 */
+.bg-container {
+  background-color: var(--bg-color-container);
+}
+
+/* 次要容器背景 */
+.bg-secondary-container {
+  background-color: var(--bg-color-secondarycontainer);
+}
+
+/* 组件背景 */
+.bg-component {
+  background-color: var(--bg-color-component);
+}
+
+/* 容器背景 active */
+.bg-container-active {
+  background-color: var(--bg-color-container-active);
+}
+
+/* 次要容器背景 active */
+.bg-secondary-container-active {
+  background-color: var(--bg-color-secondarycontainer-active);
+}
+
+/* 组件背景 active */
+.bg-component-active {
+  background-color: var(--bg-color-component-active);
+}
+
+/* 组件背景 disabled */
+.bg-component-disabled {
+  background-color: var(--bg-color-component-disabled);
+}
+
+/* 品牌色背景 */
+.bg-brand {
+  background-color: var(--brand-color);
+}
+
+/* 品牌色背景 active */
+.bg-brand-active {
+  background-color: var(--brand-color-active);
+}
+
+/* 品牌色背景 disabled */
+.bg-brand-disabled {
+  background-color: var(--brand-color-disabled);
+}
+
+/* 品牌色背景 focus */
+.bg-brand-focus {
+  background-color: var(--brand-color-focus);
+}
+
+/* 品牌色背景 light */
+.bg-brand-light {
+  background-color: var(--brand-color-light);
+}
+
+/* 品牌色背景 light active */
+.bg-brand-light-active {
+  background-color: var(--brand-color-light-active);
+}
+
+/* 错误色背景 */
+.bg-error {
+  background-color: var(--error-color);
+}
+
+/* 错误色背景 active */
+.bg-error-active {
+  background-color: var(--error-color-active);
+}
+
+/* 错误色背景 disabled */
+.bg-error-disabled {
+  background-color: var(--error-color-disabled);
+}
+
+/* 错误色背景 focus */
+.bg-error-focus {
+  background-color: var(--error-color-focus);
+}
+
+/* 错误色背景 light */
+.bg-error-light {
+  background-color: var(--error-color-light);
+}
+
+/* 警示色背景 */
+.bg-warning {
+  background-color: var(--warning-color);
+}
+
+/* 警示色背景 active */
+.bg-warning-active {
+  background-color: var(--warning-color-active);
+}
+
+/* 警示色背景 disabled */
+.bg-warning-disabled {
+  background-color: var(--warning-color-disabled);
+}
+
+/* 警示色背景 focus */
+.bg-warning-focus {
+  background-color: var(--warning-color-focus);
+}
+
+/* 警示色背景 light */
+.bg-warning-light {
+  background-color: var(--warning-color-light);
+}
+
+/* 成功色背景 */
+.bg-success {
+  background-color: var(--success-color);
+}
+
+/* 成功色背景 active */
+.bg-success-active {
+  background-color: var(--success-color-active);
+}
+
+/* 成功色背景 disabled */
+.bg-success-disabled {
+  background-color: var(--success-color-disabled);
+}
+
+/* 成功色背景 focus */
+.bg-success-focus {
+  background-color: var(--success-color-focus);
+}
+
+/* 成功色背景 light */
+.bg-success-light {
+  background-color: var(--success-color-light);
+}
+
+/* ========== 2. 文字颜色 Text Colors ========== */
+
+/* 主要文字 */
+.text-primary {
+  color: var(--text-color-primary);
+}
+
+/* 次要文字 */
+.text-secondary {
+  color: var(--text-color-secondary);
+}
+
+/* 占位符文字 */
+.text-placeholder {
+  color: var(--text-color-placeholder);
+}
+
+/* 禁用文字 */
+.text-disabled {
+  color: var(--text-color-disabled);
+}
+
+/* 反色文字 */
+.text-anti {
+  color: var(--text-color-anti);
+}
+
+/* 品牌色文字 */
+.text-brand {
+  color: var(--text-color-brand);
+}
+
+/* 链接文字 */
+.text-link {
+  color: var(--text-color-link);
+}
+
+/* 错误色文字 */
+.text-error {
+  color: var(--error-color);
+}
+
+/* 警示色文字 */
+.text-warning {
+  color: var(--warning-color);
+}
+
+/* 成功色文字 */
+.text-success {
+  color: var(--success-color);
+}
+

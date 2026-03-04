@@ -1,0 +1,18 @@
+/*
+ * Box Sizing 盒模型工具类
+ * 用于统一设置盒模型计算方式
+ * 使用方式：class="box-border" 或 class="box-content"
+ */
+
+/* ========== 1. Border Box ========== */
+/* 元素的宽度和高度包括内边距和边框，不包括外边距 */
+.box-border {
+  box-sizing: border-box;
+}
+
+/* ========== 2. Content Box ========== */
+/* 默认值，元素的宽度和高度不包括内边距和边框 */
+.box-content {
+  box-sizing: content-box;
+}
+

@@ -1,0 +1,66 @@
+/*
+ * Border Radius 圆角规范
+ * 基于设计稿 Radius Token，用于页面与组件统一圆角
+ * 使用方式：var(--radius-small) 或 .radius-small 工具类
+ * 换算：1px(750 设计稿) = 1px
+ */
+
+page {
+  /* ========== 1. 3px 极小组件圆角 ========== */
+  /* 用于极小场景，例如元素高度小于 28px 时，常用于徽标、标签等 */
+  --radius-small: 6px;
+
+  /* ========== 2. 6px 组件圆角 ========== */
+  /* 用于组件场景，例如按钮、输入框、标签等 */
+  --radius-default: 12px;
+
+  /* ========== 3. 9px 卡片圆角 ========== */
+  /* 用于卡片场景，例如单元格组的非通栏卡片样式 */
+  --radius-large: 18px;
+
+  /* ========== 4. 12px 面板圆角 ========== */
+  /* 用于面板场景，例如对话框、弹出层、选择器等 */
+  --radius-extraLarge: 24px;
+
+  /* ========== 5. 胶囊型 ========== */
+  /* 用于胶囊型组件 */
+  --radius-round: 1998px;
+
+  /* ========== 6. 圆型 ========== */
+  /* 用于圆形组件 */
+  --radius-circle: 50%;
+}
+
+/* ========== 圆角工具类 ========== */
+/* 可直接套用于组件的 class */
+
+/* 3px 极小组件圆角 - 徽标、标签等 */
+.radius-small {
+  border-radius: var(--radius-small);
+}
+
+/* 6px 组件圆角 - 按钮、输入框、标签等 */
+.radius-default {
+  border-radius: var(--radius-default);
+}
+
+/* 9px 卡片圆角 - 非通栏卡片 */
+.radius-large {
+  border-radius: var(--radius-large);
+}
+
+/* 12px 面板圆角 - 对话框、弹出层、选择器等 */
+.radius-extra-large {
+  border-radius: var(--radius-extraLarge);
+}
+
+/* 胶囊型 - 胶囊型组件 */
+.radius-round {
+  border-radius: var(--radius-round);
+}
+
+/* 圆型 - 圆形组件 */
+.radius-circle {
+  border-radius: var(--radius-circle);
+}
+

@@ -1,0 +1,32 @@
+/*
+ * Text Ellipsis 文本省略号工具类
+ * 以 t-ellipsis 开头，用于单行或多行文本溢出显示省略号
+ * 使用方式：class="t-ellipsis"（单行）或 class="t-ellipsis-2"（两行）或 class="t-ellipsis-3"（三行）
+ * 注意：单行省略需配合宽度限制（如 w-full、固定宽度）使用
+ */
+
+/* ========== 1. 单行省略 ========== */
+.t-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ========== 2. 多行省略（两行） ========== */
+.t-ellipsis-2 {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+/* ========== 3. 多行省略（三行） ========== */
+.t-ellipsis-3 {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+

@@ -1,0 +1,237 @@
+/*
+ * Flex 布局工具类
+ * 以 f- 开头，用于快速搭建 flex 布局
+ * 使用方式：class="f-flex f-row f-center f-gap-md"
+ */
+
+/* ========== 1. Display ========== */
+.f-flex {
+  display: flex;
+}
+
+.f-inline-flex {
+  display: inline-flex;
+}
+
+/* ========== 2. 主轴方向 Direction ========== */
+.f-row {
+  flex-direction: row;
+}
+
+.f-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.f-col {
+  flex-direction: column;
+}
+
+.f-col-reverse {
+  flex-direction: column-reverse;
+}
+
+/* ========== 3. 换行 Wrap ========== */
+.f-nowrap {
+  flex-wrap: nowrap;
+}
+
+.f-wrap {
+  flex-wrap: wrap;
+}
+
+.f-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+/* ========== 4. 主轴对齐 Justify Content ========== */
+.f-justify-start {
+  justify-content: flex-start;
+}
+
+.f-justify-end {
+  justify-content: flex-end;
+}
+
+.f-justify-center {
+  justify-content: center;
+}
+
+.f-justify-between {
+  justify-content: space-between;
+}
+
+.f-justify-around {
+  justify-content: space-around;
+}
+
+.f-justify-evenly {
+  justify-content: space-evenly;
+}
+
+/* ========== 5. 交叉轴对齐 Align Items ========== */
+.f-items-start {
+  align-items: flex-start;
+}
+
+.f-items-end {
+  align-items: flex-end;
+}
+
+.f-items-center {
+  align-items: center;
+}
+
+.f-items-stretch {
+  align-items: stretch;
+}
+
+.f-items-baseline {
+  align-items: baseline;
+}
+
+/* ========== 6. 多行对齐 Align Content ========== */
+.f-content-start {
+  align-content: flex-start;
+}
+
+.f-content-end {
+  align-content: flex-end;
+}
+
+.f-content-center {
+  align-content: center;
+}
+
+.f-content-between {
+  align-content: space-between;
+}
+
+.f-content-around {
+  align-content: space-around;
+}
+
+.f-content-stretch {
+  align-content: stretch;
+}
+
+/* ========== 7. 自身对齐 Align Self ========== */
+.f-self-auto {
+  align-self: auto;
+}
+
+.f-self-start {
+  align-self: flex-start;
+}
+
+.f-self-end {
+  align-self: flex-end;
+}
+
+.f-self-center {
+  align-self: center;
+}
+
+.f-self-stretch {
+  align-self: stretch;
+}
+
+/* ========== 8. 居中快捷 ========== */
+/* 水平+垂直居中（需配合 f-flex 或 f-inline-flex） */
+.f-center {
+  justify-content: center;
+  align-items: center;
+}
+
+/* 水平居中 */
+.f-center-x {
+  justify-content: center;
+}
+
+/* 垂直居中 */
+.f-center-y {
+  align-items: center;
+}
+
+/* ========== 9. 伸缩 Flex Grow / Shrink ========== */
+.f-grow {
+  flex-grow: 1;
+}
+
+.f-grow-0 {
+  flex-grow: 0;
+}
+
+.f-shrink {
+  flex-shrink: 1;
+}
+
+.f-shrink-0 {
+  flex-shrink: 0;
+}
+
+/* ========== 10. Flex 简写 ========== */
+/* flex: 1 1 0% 常见于均分 */
+.f-1 {
+  flex: 1 1 0%;
+}
+
+/* flex: 1 1 auto */
+.f-auto {
+  flex: 1 1 auto;
+}
+
+/* flex: 0 0 auto */
+.f-none {
+  flex: 0 0 auto;
+}
+
+/* ========== 11. 间隙 Gap ========== */
+.f-gap-0 {
+  gap: 0;
+}
+
+.f-gap-xs {
+  gap: 8px;
+}
+
+.f-gap-sm {
+  gap: 16px;
+}
+
+.f-gap-md {
+  gap: 24px;
+}
+
+.f-gap-lg {
+  gap: 32px;
+}
+
+.f-gap-xl {
+  gap: 48px;
+}
+
+/* 行列分别设置 */
+.f-gap-x-xs {
+  column-gap: 8px;
+}
+
+.f-gap-x-sm {
+  column-gap: 16px;
+}
+
+.f-gap-x-md {
+  column-gap: 24px;
+}
+
+.f-gap-y-xs {
+  row-gap: 8px;
+}
+
+.f-gap-y-sm {
+  row-gap: 16px;
+}
+
+.f-gap-y-md {
+  row-gap: 24px;
+}
+
